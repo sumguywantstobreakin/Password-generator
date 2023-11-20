@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution]()
-- [Live Site]()
+- [Solution](https://github.com/sumguywantstobreakin/Password-generator)
+- [Live Site](https://sumguywantstobreakin.github.io/Password-generator/)
 
 ### Built with
 
