@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <script src="./index.js" defer></script>
+
+    <title>Password Generator</title>
+</head>
+<body>
+    <main class = "container">
+        <h1>Password Generator</h1>
+        <div class="generated-password">
+            <span class = "password-display">
+            <span class = "generated-password-placeholder">P4$5W0rD!</span>
+             </span>
+
+            <div class="copy-div">
+                <span class = "copied-text"></span>
+                <button class = "copy-btn">
+                    <img src="./assets/images/icon-copy.svg" alt="" >
+                </button>
+            </div>
+        </div>
+
+        <form class="password-settings container">
+            <div class="char-length">
+                <p>Character Length</p>
+                <span class = "slider-number">0</span>
+            </div>
+            <input 
+            id = "input-slider"
+            type="range"
+            min="1"
+            max="20"
+            value="10"
+            autocomplete="off">
+
+            <div class="parameter-container">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="uppercase" value="uppercase">
+                    <p>Include Uppercase Letters</p>
+                </div>
+            
+                <div class="checkbox-container">
+                    <input type="checkbox" id="lowercase" value="lowercase" checked>
+                    <p>Include Lowercase Letters</p>
+                </div>
+                   
+                <div class="checkbox-container">
+                    <input type="checkbox" id="numbers" value="numbers" checked>
+                    <p>Include Numbers</p>
+              
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="symbols" value="symbols">
+                    <p>Include Symbols</p>
+                </div>
+                   
+            </div>
+
+            <div class="strength-container">
+                <span class = "strength-placeholder">Strength</span>
+                <div class="strength-rating">
+                    <span class = "strength-rating-text"></span>
+                    <div class="strength-rating-bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>    
+                    </div>
+                </div>
+            </div>
+
+            <button class = "generate-btn" type="submit">
+                <span>Generate</span>
+                <svg 
+                width="12" 
+                height="12" 
+                xmlns="http://www.w3.org/2000/svg">
+                <path 
+                    fill="#24232C" 
+                    d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/>
+            </svg>
+            </button>
+        </form>
+    </main>
+    <footer>
+        <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a> ||
+        Coded by <a href="https://www.frontendmentor.io/profile/arielleandrotech"> @arielleandrotech</a>.
+      </div>
+      </footer>
+</body>
+
+</html>
